@@ -17,6 +17,10 @@ header {
   padding: 0.5em 0.5em;
 }
 
+.number {
+  display: inline;
+} 
+
 #rows {
   background-color: #444;
   padding: 1em;

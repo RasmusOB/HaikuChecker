@@ -57,7 +57,29 @@ document.querySelector('#submit').addEventListener('click', (e) => {
     document.querySelector('#message').style.color = 'red'
   }
 
-  document.querySelector('#format').textContent = sentence
+  if(checkHaiku(row1) == 5) {
+    document.querySelector('#num1').style.color = 'green'
+  } else {
+    document.querySelector('#num1').style.color = 'red'
+  }
+
+  if(checkHaiku(row2) == 7) {
+    document.querySelector('#num2').style.color = 'green'
+  } else {
+    document.querySelector('#num2').style.color = 'red'
+  }
+
+  if(checkHaiku(row3) == 5) {
+    document.querySelector('#num3').style.color = 'green'
+  } else {
+    document.querySelector('#num3').style.color = 'red'
+  }
+
+  document.querySelector('#num1').textContent = checkHaiku(row1)
+  document.querySelector('#num2').textContent = checkHaiku(row2)
+  document.querySelector('#num3').textContent = checkHaiku(row3)
+
+  document.querySelector('#num1').textContent = checkHaiku(row1)
   document.querySelector('#message').textContent = message
 })
 
